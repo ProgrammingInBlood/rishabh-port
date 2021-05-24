@@ -1,0 +1,157 @@
+.containerMain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+
+  img {
+    width: 100vw;
+    padding-bottom: 30px;
+    max-width: 300px;
+  }
+
+  .containerTitle {
+    color: white;
+
+    h1 {
+      font-size: 70px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .typing {
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+
+    p {
+      font-size: 5rem;
+
+      margin: 0;
+      font-weight: 800;
+    }
+
+    @media (max-width: 600px) {
+      p {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .Typewriter {
+    display: inline-block;
+
+    font-size: 5rem;
+
+    font-weight: 800;
+    color: #705df2;
+  }
+  @media (max-width: 600px) {
+    .Typewriter {
+      font-size: 50px;
+    }
+  }
+
+  .description {
+    margin-top: 2rem;
+    padding: 0 20px;
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  }
+  .buttonFlex {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .button {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-areas: 'left center right';
+
+    color: #ffffff;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+  }
+
+  .cta {
+    position: relative;
+    margin: auto;
+    margin-left: 0;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+  }
+  .cta:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: #acb6fe;
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ffffff;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover:before {
+    width: 100%;
+    background: #6063ff;
+  }
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  .cta:active {
+    transform: scale(0.96);
+  }
+}
+
+#textM {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  #text {
+    display: none;
+  }
+  #textM {
+    display: inline-block;
+  }
+}

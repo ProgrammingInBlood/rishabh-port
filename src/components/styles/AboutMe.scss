@@ -1,0 +1,115 @@
+@font-face {
+  font-family: myfont1;
+  src: url(../fonts/FontsFree-Net-greycliff-cf-bold.ttf);
+}
+
+.containerWork {
+  position: relative;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url(../images/bg2.jpg);
+  color: white;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+
+  img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+
+  h2 {
+    z-index: 1;
+    position: relative;
+    font-size: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Paytone One', sans-serif;
+    margin: 0;
+    #title-main {
+      color: #705df2;
+    }
+  }
+  p {
+    z-index: 1;
+    position: relative;
+    font-weight: 700;
+    .span-title {
+      display: block;
+      font-family: 'Paytone One', sans-serif;
+      color: #705df2;
+      font-size: 2rem;
+    }
+    span {
+      display: block; // share your http server //done.......//ok
+    }
+  }
+}
+
+.content {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  h1 {
+    margin: 0;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 3px;
+    font-size: 5rem;
+    span {
+      color: #705df2;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .containerWork {
+    h2 {
+      font-size: 3.5rem;
+    }
+    img {
+      position: absolute;
+      top: -100px;
+    }
+  }
+}
+
+#fade__bottom_top {
+  position: absolute;
+  height: 10.4rem;
+  background-image: linear-gradient(
+    360deg,
+    transparent,
+    rgba(0, 0, 0, 0.71),
+    #000
+  );
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#fade__bottom_down {
+  position: absolute;
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(0, 0, 0, 0.71),
+    #000
+  );
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
